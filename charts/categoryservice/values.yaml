@@ -7,12 +7,11 @@ replicaCount: 3
 image:
   repository: docker.maven.incomm.com/mgkaiser/categoryservice
   pullPolicy: Always  
-  tag: "Build-2"
+  tag: "Build-3"
 
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
-connectionstring: "Server=mssql-mssql-linux.mssql;Database=Northwind;User Id=sa;Password=c0wsRc00l;MultipleActiveResultSets=true"
 
 environment: Development
 log:
@@ -34,7 +33,7 @@ podAnnotations: {}
 
 podLabels:
   app: categoryservice
-  version: "Build-2"  
+  version: "Build-3"  
 
 podSecurityContext: {}
   # fsGroup: 2000
