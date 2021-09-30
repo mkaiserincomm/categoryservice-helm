@@ -7,7 +7,7 @@ replicaCount: 3
 image:
   repository: mgkaiser/categoryservice
   pullPolicy: Always  
-  tag: "Build-2"
+  tag: "Build-3"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -33,7 +33,7 @@ podAnnotations: {}
 
 podLabels:
   app: categoryservice
-  version: "Build-2"  
+  version: "Build-3"  
 
 podSecurityContext: {}
   # fsGroup: 2000
