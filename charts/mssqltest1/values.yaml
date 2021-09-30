@@ -62,13 +62,7 @@ ingress:
       - path: 
         backend:
           serviceName: categoryservice
-          servicePort: 80
-    - host: categoryservice.sigcntnr.kaiser.guru
-      paths:
-      - path: 
-        backend:
-          serviceName: categoryservice
-          servicePort: 80
+          servicePort: 80    
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
