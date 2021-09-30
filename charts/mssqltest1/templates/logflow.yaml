@@ -1,0 +1,15 @@
+#apiVersion: logging.banzaicloud.io/v1beta1
+#kind: Flow
+#metadata:  
+#  name: {{ include "categoryservice.fullname" . }}
+#  namespace: {{ .Release.Namespace }}
+#spec:
+#  globalOutputRefs: []
+#  localOutputRefs:
+#  - {{ include "categoryservice.fullname" . }}
+#  match:
+#  - select:
+#      container_names: []
+#      hosts: []
+#      labels:
+#        app.kubernetes.io/name: {{ include "categoryservice.fullname" . }}
