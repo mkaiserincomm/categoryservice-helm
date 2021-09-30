@@ -7,11 +7,12 @@ replicaCount: 3
 image:
   repository: docker.maven.incomm.com/mgkaiser/categoryservice
   pullPolicy: Always  
-  tag: "Build-35"
+  tag: "Build-2"
 
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
+connectionstring: "Server=mssql-mssql-linux.mssql;Database=Northwind;User Id=sa;Password=c0wsRc00l;MultipleActiveResultSets=true"
 
 environment: Development
 log:
@@ -29,11 +30,11 @@ serviceAccount:
   # If not set and create is true, a name is generated using the fullname template
   name: ""
 
-podAnnotations: {} 
+podAnnotations: {}  
 
 podLabels:
   app: webtest1
-  version: "latest"  
+  version: "Build-2"  
 
 podSecurityContext: {}
   # fsGroup: 2000
