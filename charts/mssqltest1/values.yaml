@@ -12,7 +12,6 @@ image:
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
-connectionstring: "Server=mssql-mssql-linux.mssql;Database=Northwind;User Id=sa;Password=c0wsRc00l;MultipleActiveResultSets=true"
 
 environment: Development
 log:
