@@ -5,7 +5,7 @@
 replicaCount: 3
 
 image:
-  repository: docker.maven.incomm.com/mgkaiser/categoryservice
+  repository: mgkaiser/categoryservice
   pullPolicy: Always  
   tag: "latest"
 
@@ -57,18 +57,12 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: categoryservice.sigcntnr.incomm.com
+    - host: categoryservice.kaiser.guru
       paths:
       - path: 
         backend:
           serviceName: categoryservice
-          servicePort: 80
-    - host: categoryservice.sigcntnr.kaiser.guru
-      paths:
-      - path: 
-        backend:
-          serviceName: categoryservice
-          servicePort: 80
+          servicePort: 80    
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
