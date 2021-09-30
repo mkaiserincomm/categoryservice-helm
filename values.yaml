@@ -32,7 +32,7 @@ serviceAccount:
 podAnnotations: {}  
 
 podLabels:
-  app: webtest1
+  app: categoryservice
   version: "latest"  
 
 podSecurityContext: {}
