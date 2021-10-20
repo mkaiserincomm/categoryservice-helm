@@ -12,6 +12,8 @@ image:
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
+databaseConnectString: ""
+sharedSecretsEnabled: false
 
 environment: Development
 log:
