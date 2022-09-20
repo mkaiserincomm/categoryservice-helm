@@ -7,18 +7,13 @@ replicaCount: 3
 image:
   repository: docker.maven.incomm.com/mgkaiser/categoryservice
   pullPolicy: Always  
-  tag: "Build-35"
+  tag: "Build-4"
 
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
 environment: Development
-log:
-  url: splunk-s1-standalone-0.splunk-s1-standalone-headless.splunk.svc.kaiser.guru
-  port: 8088
-  secretname: splunk-secret
-  secretkey: hec_token
   
 serviceAccount:
   # Specifies whether a service account should be created
@@ -29,11 +24,11 @@ serviceAccount:
   # If not set and create is true, a name is generated using the fullname template
   name: ""
 
-podAnnotations: {} 
+podAnnotations: {}  
 
 podLabels:
-  app: webtest1
-  version: "latest"  
+  app: categoryservice
+  version: "Build-5"  
 
 podSecurityContext: {}
   # fsGroup: 2000
@@ -56,12 +51,10 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: categoryservice.sigcntnr.incomm.com
+    - host: categoryservice.sandbox1-ll.ecn.incomm.com
       paths:
-      - path: 
-        backend:
-          serviceName: categoryservice
-          servicePort: 80    
+      - path: /
+        pathType: Prefix 
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
