@@ -7,7 +7,7 @@ replicaCount: 3
 image:
   repository: docker.maven.incomm.com/mgkaiser/categoryservice
   pullPolicy: Always  
-  tag: "Build-4"
+  tag: "Build-5"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -36,7 +36,7 @@ podAnnotations: {}
 
 podLabels:
   app: categoryservice
-  version: "Build-4"  
+  version: "Build-5"  
 
 podSecurityContext: {}
   # fsGroup: 2000
